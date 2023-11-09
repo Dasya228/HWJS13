@@ -13,8 +13,9 @@ balloon.forEach((balloon, idx)=>{
 
 })
 allcheck.addEventListener('click',()=>{
+    const innercheck = input[0].checked
     input.forEach((el,idx)=>{
-        el.checked = !el.checked
+        el.checked = !innercheck
         balloon.forEach((balloon)=>{
             balloon.classList.toggle('bgGreen')
         })
